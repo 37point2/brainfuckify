@@ -1,12 +1,12 @@
 import sys
 
-def main(file, col_width):
-    ascii_input = open(file, 'r').read()
+def main(filename, col_width):
+    ascii_input = open(filename, 'r').read()
 
-    if len(file.split(".")) > 1:
-        out_file = ".".join(file.split(".")[:-1]) + ".bf"
+    if len(filename.split(".")) > 1:
+        out_file = ".".join(filename.split(".")[:-1]) + ".bf"
     else:
-        out_file = file + ".bf"
+        out_file = filename + ".bf"
     print out_file
 
     ascii_output = ""
